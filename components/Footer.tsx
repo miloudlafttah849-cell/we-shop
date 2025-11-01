@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -11,19 +11,20 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">خدمة العملاء</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors">اتصل بنا</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">الأسئلة الشائعة</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">سياسة الاسترجاع والاستبدال</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">تتبع طلبك</a></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">اتصل بنا</Link></li>
+              <li><Link to="/faq" className="hover:text-white transition-colors">الأسئلة الشائعة</Link></li>
+              <li><Link to="/return-policy" className="hover:text-white transition-colors">سياسة الاسترجاع والاستبدال</Link></li>
+              <li><Link to="/track-order" className="hover:text-white transition-colors">تتبع طلبك</Link></li>
+              <li><Link to="/how-to-pay" className="hover:text-white transition-colors">كيفية الدفع</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">عن We Shop</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors">من نحن</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">الوظائف</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">الشروط والأحكام</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">سياسة الخصوصية</a></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">من نحن</Link></li>
+              <li><Link to="/careers" className="hover:text-white transition-colors">الوظائف</Link></li>
+              <li><Link to="/terms" className="hover:text-white transition-colors">الشروط والأحكام</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-white transition-colors">سياسة الخصوصية</Link></li>
             </ul>
           </div>
           <div>

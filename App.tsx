@@ -10,6 +10,14 @@ import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import { CartProvider } from './context/CartContext';
+import AboutPage from './pages/info/AboutPage';
+import CareersPage from './pages/info/CareersPage';
+import FAQPage from './pages/info/FAQPage';
+import HowToPayPage from './pages/info/HowToPayPage';
+import PrivacyPage from './pages/info/PrivacyPage';
+import ReturnPolicyPage from './pages/info/ReturnPolicyPage';
+import TermsPage from './pages/info/TermsPage';
+import TrackOrderPage from './pages/info/TrackOrderPage';
 
 function App() {
   return (
@@ -26,6 +34,16 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/checkout" element={<CheckoutPage />} />
+              
+              {/* Info Pages */}
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/careers" element={<CareersPage />} />
+              <Route path="/faq" element={<FAQPage />} />
+              <Route path="/how-to-pay" element={<HowToPayPage />} />
+              <Route path="/privacy-policy" element={<PrivacyPage />} />
+              <Route path="/return-policy" element={<ReturnPolicyPage />} />
+              <Route path="/terms" element={<TermsPage />} />
+              <Route path="/track-order" element={<TrackOrderPage />} />
             </Routes>
           </main>
           <Footer />
